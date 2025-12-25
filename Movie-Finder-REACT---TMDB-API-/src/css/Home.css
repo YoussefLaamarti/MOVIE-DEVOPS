@@ -1,0 +1,226 @@
+.Container-home-header{
+  
+    background-color: var(--red);
+    
+    width: 100%;
+    height:40rem;
+    display: flex;
+    flex-direction: column;
+ 
+
+}
+
+.paper{
+background-image: url('../assets/upgrade.jpg');
+background-repeat: no-repeat;
+background-size: 240%;
+background-position-x: 46%;
+    width:30rem;
+    height:40rem;
+    margin: auto; 
+}
+.paper-flex{   display: flex;}
+.Container-home-header h1{
+    background-color: var(--red);
+    color: var(--yellow);
+    font-family: 'Rubik Iso', cursive;
+    font-size: 64px;
+    text-align: center;
+    margin-top: 16rem;
+    
+}
+
+    
+    
+    
+.triangle{
+    
+    width:15rem;
+    height:15rem;
+    border-top: 10px solid transparent;
+    border-left: 10px solid  var(--red);
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid  var(--red);
+    border-width:120px;
+    margin-top: 14.2%;
+}
+#right{
+    width:15rem;
+    height:15rem;
+    border-top: 10px solid  transparent;
+    border-left: 10px solid  transparent;
+    border-right: 10px solid var(--red);
+    border-bottom: 10px solid   var(--red);
+    border-width:120px;
+  
+}
+/*rows-container*/
+.Container-home-rows{
+  
+    background: linear-gradient(0deg, rgba(5,8,8,1) 90%, var(--red) 100%);  
+
+    
+    min-width: 480px;
+    min-height:20rem;
+   
+}
+.row-container{
+background: linear-gradient(0deg, rgba(5,8,8,1) 90%, var(--red) 100%);  
+max-width: 80rem;    
+    min-height:40rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.searchbar-container{
+    width: 100%;
+    height:100%rem;
+}
+.row::-webkit-scrollbar{
+    display: none;
+}
+.row-container h1{
+    font-family: 'Asap', sans-serif;
+    font-size: 30px;
+    color: var(--yellow);
+    
+}
+.row-movies{
+    margin-top: 8px;
+    min-width: 200px;
+    height: 350px;
+    
+    
+}
+.filter-paddding{
+    padding: 11px;  
+}
+.row-flex{
+    display: flex;
+    gap: 1rem;
+    transition: 2s;
+    
+}
+
+.card{
+   
+    width: 100%;
+    height: 90%;
+}
+.card:hover{
+    transform: scale(1.07);
+    transition: 1s;
+}
+.card:not(hover){
+    transform: scale(1);
+    transition: 1s;
+}
+.row{
+    overflow-y: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.searchbar{
+    padding: 6px;
+    
+    border: none;
+    font-size: 17px;
+    height: 40px;
+    width: 100%;
+    border-radius: 30px;
+    margin: auto;
+    background: #dadada;
+}
+.row-result{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    width: 80%;
+    min-height: 700px;
+    margin: auto;
+}
+.row-movies-title{
+    color: var(--yellow);
+    font-size: 15px;
+    font-family: 'Asap', sans-serif;
+    text-decoration: none;
+
+}
+.date{
+    color: rgb(206, 205, 205);
+    font-family: 'Asap', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.Sliderrr{
+    color: var(--yellow);
+    background-color: var(--gray);
+    
+    padding: 5px 14px;
+    text-decoration: none;
+    transition: background-color .3s;
+    cursor: pointer;
+    height: 2.2rem;
+    font-family: 'Asap', sans-serif;
+    font-size: 15px;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    border: 2px solid var(--yellow);
+
+}
+.Sliderrr:hover{
+   
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.Sliderrr-container{
+display: flex;
+float: right;
+
+}
+
+@media screen and (max-width:1000px) {
+
+    .row-result{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        width: 70%;
+        min-height: 700px;
+        margin: auto;
+    }
+    
+}
+@media screen and (max-width:800px) {
+
+    .row-result{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        width: 70%;
+        min-height: 700px;
+        margin: auto;
+    }
+    
+}
+@media screen and (max-width:500px) {
+
+    .row-result{
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        width: 40%;
+        min-height: 700px;
+        margin: auto;
+    }
+    
+}
