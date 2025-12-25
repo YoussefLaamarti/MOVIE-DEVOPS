@@ -1,0 +1,20 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: movie-devops
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: movie-devops
+  template:
+    metadata:
+      labels:
+        app: movie-devops
+    spec:
+      containers:
+      - name: movie-devops
+        image: youssef121/movie-devops:latest
+        ports:
+        - containerPort: 80
